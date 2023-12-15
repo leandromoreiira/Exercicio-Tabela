@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body
+        {
+        font-family: Arial, Helvetica, sans-serif;
+       
+        }
+        table
+        {
+            width: 400px;
+            border-collapse: collapse;
+            border: 6px solid rgb(136, 145, 136) ;
+        }
+        tr
+        {
+            background-color: rgba(134, 134, 185, 0.733);
+        }
+        tr.linha
+        {
+            background-color: rgb(30, 30, 133);
+        }
+        td
+        {
+        padding: 8px;
+        border: 1px solid black;
+        vertical-align:  middle;
+        }
+        .numero
+        {
+            text-align: right;
+        }
+        td , th
+        {   
+            padding: 10px;
+            border: 1px solid;
+        }
+
+        thead
+        {
+        color: white;
+        }
+        table.pequena
+        {
+           
+           margin-bottom: 50px;
+        }
+        tbody >tr:nth-child(2n)
+        {
+            background-color: brown;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Uso de Tabelas Pequenas</h1>
+   <table class="pequena">
+            <tr>
+                <td>A1</td>
+                <td>B1</td>
+                <td>C1</td>
+            </tr>
+            <tr class="linha">
+                <td>A2</td>
+                <td>B2</td>
+                <td>C2</td>
+            </tr>
+
+            <tr>
+                <td>A3</td>
+                <td>B3</td>
+                <td>C3</td>
+            </tr>
+
+            <tr>
+                <td>A4</td>
+                <td>B4</td>
+                <td class="Numero ">C4</td>
+            </tr>
+            
+   </table>
+
+
+   <table>
+    <h1>Uso de Tabelas Grandes</h1>
+    <thead>
+        <tr>
+            <th scope="col">Estado </th>
+            <th>Polulação</th>
+
+        </tr>
+    </thead>
+    <tbody>
+        <td>São Paulo</td>
+        <td>49.919.912</td>
+        <TR>
+            <td>Minas Gerais</td>
+            <td>90.202.202</td>
+        </TR>
+        <tr>
+            <td>Rio de Janeiro</td>
+            <td>190.101.02</td>
+        </tr>
+    </tbody>
+
+    <tfoot>
+        <tr>
+            <th>
+                Total de Habitantes
+            </th>
+            <td>
+                00000
+            </td>
+        </tr>
+    </tfoot>
+   </table>
+</body>
+</html>
